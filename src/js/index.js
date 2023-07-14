@@ -12,7 +12,6 @@ Loading.standard('Loading data, please wait...', {
 
 axios.defaults.headers.common["x-api-key"] = API_KEY;
 
-
 fetchBreeds()
     .then(breeds => {
         Loading.remove();
@@ -42,7 +41,7 @@ function onSelect(evt) {
             Loading.remove();
             elements.container.innerHTML = createMarkup(data);
         })
-        .catch((error) => {
+        .catch(() => {
             Report.failure(
             "Oops! Something went wrong! Try reloading the page!",
             'Okay',
