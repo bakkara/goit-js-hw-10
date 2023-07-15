@@ -9,4 +9,4 @@ const elements = {
     error: document.querySelector(".error"),
 }
 
-export {API_KEY, elements, BASE_URL, END_POINT, breedSelect}
+export {API_KEY, elements, BASE_URL, END_POINT}
